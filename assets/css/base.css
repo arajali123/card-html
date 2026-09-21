@@ -1,7 +1,3 @@
-.feature-collection-section {
-   background: #e9e8e3;
-}
-
 .feature-collection-main_wrapper {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -40,6 +36,7 @@
 .scroll-collection-item .feature-collection_header {
    display: flex;
    flex-direction: column;
+   width: 100%;
    row-gap: 6px;
 }
 
@@ -47,11 +44,30 @@
   font-size: 48px;
   opacity: 0.35;
   transition: opacity 0.3s ease;
-  color: var(--color-foreground);
+}
+
+.scroll-collection-item .scroll-collection-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.scroll-collection-item .scroll-collection-title .feature-collection-btn {
+   font-size: 20px;
+   font-style: italic;
+   letter-spacing: -0.2px;
+   opacity: 0;
+   visibility: hidden;
+   font-weight: 500;
 }
 
 .scroll-collection-item .scroll-collection-title.active {
   opacity: 1;
+}
+
+.scroll-collection-item .scroll-collection-title.active .feature-collection-btn {
+  opacity: 1;
+  visibility: visible;
 }
 
 .scroll-collection-item .feature-collection_description {
@@ -106,14 +122,6 @@
    height: 100%;
    display: block;
    object-fit: cover;
-}
-
-.scroll-collection-item .feature-collection-btn {
-   display: flex;
-   align-items: center;
-   column-gap: 8px;
-   font-size: 20px;
-   font-style: italic;
 }
 
 @media (max-width: 1599px) {
