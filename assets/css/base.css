@@ -46,10 +46,11 @@
   transition: opacity 0.3s ease;
 }
 
-.scroll-collection-item .scroll-collection-title {
+.scroll-collection-item .scroll-collection-title a {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   width: 100%;
 }
 
 .scroll-collection-item .scroll-collection-title .feature-collection-btn {
