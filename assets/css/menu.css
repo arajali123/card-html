@@ -1,0 +1,161 @@
+.mega-menu-header {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.mega-menu-header .page-width {
+  padding: 0 24px;
+}
+.header-mega-menu_wrap .mega-menu-list {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 48px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.header-mega-menu_wrap .mega-menu-list .mega-menu-sub_item {
+   position: relative;
+}
+
+.header-mega-menu_wrap .mega-menu-list .mega-menu-sub_item> .mega-menu_link {
+   display: flex;
+   align-items: center;
+   column-gap: 4px;
+   font-size: 14px;
+   letter-spacing: 0.42px;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.header-mega-menu_wrap .mega-menu-list .mega-menu-sub_item> .mega-menu_link .mega-menu_icons {
+   display: flex;
+   transition: 0.3s all;
+}
+
+.header-mega-menu_wrap .mega-menu-list .mega-menu-sub_item:hover .mega-menu_link .mega-menu_icons {
+   transform: rotate(180deg);
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap {
+   position: absolute;
+   width: calc(100vw - 0px);
+   top: 54px;
+   left: -24px;
+   padding: 0 24px;
+   transition: transform .3s ease, opacity .3s ease;
+   opacity: 0;
+   visibility: hidden;
+   transform: translate3d(0, 1rem, 0);
+   background: #fff;
+   z-index: 999;
+}
+
+.header-mega-menu_wrap .mega-menu-list .mega-menu-sub_item:hover .mega-menu-dropdown_wrap {
+   opacity: 1;
+   visibility: visible;
+   transform: translateZ(0);
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap.mega-menu-dropdown_inner {
+   width: 250px;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-list_wrap {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 40px;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-list-item {
+  grid-area: span 1 / span 2;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-list-item:nth-child(4) {
+  grid-column: span 3;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-list-item:nth-child(5) {
+  grid-column: span 3;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-categories-link .mega-menu-title {
+   font-size: 20px;
+   font-family: var(--font-family-heading);
+   letter-spacing: -0.4px;
+   text-transform: uppercase;
+   margin-bottom: 24px;
+   font-weight: 400;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-list-item ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-categories ul li {
+   margin-bottom: 12px;
+   line-height: 1;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-categories ul li .mega-menu-reversed-link {
+   font-size: 20px;
+   letter-spacing: -0.4px;
+   font-family: var(--font-family-heading);
+   font-weight: 400;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-categories-link ul li {
+   margin-bottom: 12px;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-categories-link ul li .mega-menu-link {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.48px;
+   font-weight: 400;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-description .desc {
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.42px;
+   font-weight: 400;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-collection-card .collection-mega-menu-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-collection-card .collection-mega-menu-content .collection-mega-menu-title {
+   font-style: Italic;
+   font-size: 20px;
+   line-height: 20px;
+   letter-spacing: -0.2px;
+   font-weight: 400;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-collection-card .collection-mega-menu-content .collection-mega-menu-btn {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-collection-card .collection-mega-menu-content .collection-mega-menu-btn span {
+   display: flex;
+}
+
+.header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-collection-card .collection-mega-menu-thumb {
+   display: flex;
+   margin-bottom: 12px;
+}
+
+@media (max-width: 1399px) {
+   .header-mega-menu_wrap .mega-menu-dropdown_wrap .mega-menu-list_wrap {
+      column-gap: 20px;
+   }
+}
+

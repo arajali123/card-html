@@ -1,0 +1,106 @@
+.lay-search-default-main {
+   padding-top: 120px;
+}
+
+.lay-search-default-main .page-width {
+  padding: 0 24px;
+}
+
+.search-default_main_wrapper .search-default-top_form {
+   position: relative;
+}
+
+.search-default_main_wrapper .search-default-top_form .form-input input {
+   font-size: 36px;
+   text-align: center;
+}
+
+.search-default_main_wrapper .search-default-top_form .form-input input::placeholder,
+.search-default_main_wrapper .search-default-top_form .form-input input[type="text"] {
+   font-size: 36px;
+   letter-spacing: -0.72px;
+   font-family: var(--font-family-heading);
+   padding: 0 20px 0 0;
+   font-weight: 400;
+}
+
+.search-default_main_wrapper .search-default-top_form .search-icons span {
+   display: flex;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+}
+
+.search-tabs-result-main .vertical-tab-wrapper {
+   display: flex;
+   align-items: start;
+   column-gap: 8px;
+   row-gap: 30px;
+}
+
+.search-tabs-result-main .vertical-tab-wrapper .vertical-tab {
+   max-width: 300px;
+   width: 100%;
+}
+
+.search-tabs-result-main .vertical-tab-wrapper .search-tabs-main_item {
+  display: none;
+}
+
+.search-tabs-result-main .vertical-tab-wrapper .search-tabs-main_item.active {
+  display: block;
+}
+
+.search-tabs-result-main .vertical-tab-wrapper .search-tabs-main_item .search-tabs_box {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 8px;
+   row-gap: 40px;
+}
+
+.search-tabs-result-main .vertical-tab-wrapper .vertical-tab .each-tab .title {
+   display: block;
+   font-weight: 400;
+   font-size: 20px;
+   letter-spacing: -0.4px;
+   font-family: var(--font-family-heading);
+   text-transform: uppercase;
+   margin-bottom: 12px;
+   word-break: break-word;
+   cursor: pointer;
+   line-height: 1;
+}
+
+.search-tabs-result-main .vertical-tab-wrapper .vertical-tab .each-tab.active .title {
+  text-decoration: underline;
+}
+
+@media (max-width: 1399px) {
+   .search-tabs-result-main .vertical-tab-wrapper .vertical-tab {
+      max-width: 175px;
+   }
+}
+
+@media (max-width: 1199px) {
+   .search-tabs-result-main .vertical-tab-wrapper .search-tabs-main_item .search-tabs_box {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 767px) {
+  .search-tabs-result-main .vertical-tab-wrapper {
+      flex-direction: column;
+   }
+
+   .search-tabs-result-main .vertical-tab-wrapper .vertical-tab {
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 575px) {
+      .search-default_main_wrapper .search-default-top_form .form-input input::placeholder,
+      .search-default_main_wrapper .search-default-top_form .form-input input[type="text"] {
+      font-size: 25px;
+   }
+}

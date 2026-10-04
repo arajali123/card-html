@@ -8,87 +8,322 @@
    <meta name="description" content="" />
 
    <!-- Site Title -->
-   <title>Starter - SASS Starter HTML5 Template</title>
+   <title>Varnish</title>
 
    <!-- Place favicon.ico in the root directory -->
    <link rel="shortcut icon" type="image/x-icon" href="" />
 
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/base.css" />
    <link rel="stylesheet" href="assets/css/main.css" />
+   <link rel="stylesheet" href="assets/css/search.css" />
+   <link rel="stylesheet" href="assets/css/menu.css" />
 </head>
 
 <body>
 
-   <!-- start: Start Section -->
-   <section class="feature-collection-section">
+   <header class="snazzy-header mega-menu-header">
       <div class="page-width">
-         <div class="feature-collection-main_wrapper">
-            <div class="feature-collection-item_wrap">
-               <span class="feature-collection_subtitle">FEATURED COLLECTION</span>
-               <div class="scroll-collection-item">
-                  <div class="feature-collection_content">
-                     <div class="feature-collection_header">
-                        <h3 class="scroll-collection-title" data-index="0"><a href="#">QUIET GEOMETRY <span
-                                 class="feature-collection-btn">Explore Collection</span></a>
-                        </h3>
-                        <h3 class="scroll-collection-title" data-index="1"><a href="#">OBJECTS OF AFFECTION <span
-                                 class="feature-collection-btn">Explore Collection</span></a>
-                        </h3>
-                        <h3 class="scroll-collection-title" data-index="2"><a href="#">HUMAN PRESENCE <span
-                                 class="feature-collection-btn">Explore Collection</span></a>
-
-                        </h3>
-                        <h3 class="scroll-collection-title" data-index="3"><a href="#">BEYOND THE WINDOW <span
-                                 class="feature-collection-btn">Explore Collection</span></a>
-                        </h3>
+         <nav class="header-mega-menu_wrap">
+            <ul class="mega-menu-list">
+               <li class="mega-menu-sub_item">
+                  <a href="#" class="mega-menu_link"><span>SHOP</span>
+                     <span class="mega-menu_icons">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M8.99949 9.87855L12.7118 6.16626L13.7725 7.22692L8.99949 11.9999L4.22656 7.22692L5.28722 6.16626L8.99949 9.87855Z"
+                              fill="#1D1B14" />
+                        </svg>
+                     </span>
+                  </a>
+                  <div class="mega-menu-dropdown_wrap">
+                     <div class="mega-menu-list_wrap">
+                        <div class="mega-menu-list-item mega-menu-categories">
+                           <ul>
+                              <li><a class="mega-menu-reversed-link" href="#">Shop All</a></li>
+                              <li><a class="mega-menu-reversed-link" href="#">New Arrivals</a></li>
+                              <li><a class="mega-menu-reversed-link" href="#">Best Sellers</a></li>
+                           </ul>
+                        </div>
+                        <div class="mega-menu-list-item mega-menu-categories-link">
+                           <h4 class="mega-menu-title">Categories</h4>
+                           <ul>
+                              <li><a class="mega-menu-link" href="#">Abstract</a></li>
+                              <li><a class="mega-menu-link" href="#">Still Life</a></li>
+                              <li><a class="mega-menu-link" href="#">Figurative</a></li>
+                              <li><a class="mega-menu-link" href="#">Landscape & Nature</a></li>
+                              <li><a class="mega-menu-link" href="#">Graphic & Geometric</a></li>
+                              <li><a class="mega-menu-link" href="#">All Categories</a></li>
+                           </ul>
+                        </div>
+                        <div class="mega-menu-list-item mega-menu-categories-link">
+                           <h4 class="mega-menu-title">COLLECTIONS</h4>
+                           <ul>
+                              <li><a class="mega-menu-link" href="#">Quiet Geometry</a></li>
+                              <li><a class="mega-menu-link" href="#">Objects of Affection</a></li>
+                              <li><a class="mega-menu-link" href="#">Human Presence</a></li>
+                              <li><a class="mega-menu-link" href="#">Beyond the Window</a></li>
+                              <li><a class="mega-menu-link" href="#">All Collections</a></li>
+                           </ul>
+                        </div>
+                        <div class="mega-menu-list-item mega-menu-description">
+                           <p class="desc">A study of shape, rhythm and balance through works built from simple forms.
+                              Quiet Geometry brings together structured compositions, restrained palettes and playful
+                              arrangements where line and colour create a sense of order without losing their expressive
+                              character.</p>
+                        </div>
+                        <div class="mega-menu-list-item mega-menu-collection-card">
+                           <div class="collection-mega-menu-thumb">
+                              <img src="assets/images/project/collection.png" alt="Images">
+                           </div>
+                           <div class="collection-mega-menu-content">
+                              <h3><a class="collection-mega-menu-title" href="#">Quiet Geometry</a></h3>
+                              <a href="#" class="collection-mega-menu-btn">DISCOVER<span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M10.7814 7.33394L7.20539 3.75793L8.14819 2.81512L13.3337 8.0006L8.14819 13.186L7.20539 12.2432L10.7814 8.66727H2.66699V7.33394H10.7814Z"
+                                          fill="#1D1B14" />
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="feature-collection_description">
-                     <p class="feature-collection-desc">A study of shape, rhythm and balance through works built from
-                        simple forms. Quiet Geometry brings together structured basic compositions, the restrained
-                        palettes
-                        and
-                        playful arrangements where line and colour create a sense of order without losing their
-                        expressive character.
-                     </p>
-                     <p class="feature-collection-desc">Everyday objects become something worth looking at twice.
-                        Objects of Affection gathers still lifes of flowers, fruit, vessels and familiar domestic
-                        details, revealing how colour, light and composition can transform ordinary subjects into
-                        intimate moments of beauty.
-                     </p>
-                     <p class="feature-collection-desc">From quiet portraits to expressive gestures, Human Presence
-                        explores the many ways artists have represented the figure. The collection moves between
-                        intimacy, movement and character, bringing together works where posture, expression and form
-                        reveal something distinctly.
-                     </p>
-                     <p class="feature-collection-desc">Landscapes shaped by atmosphere rather than destination. Beyond
-                        the Window brings together gardens, coastlines, fields and distant horizons, capturing changing
-                        light, colour and weather through works that invite a slower way of seeing the world around us.
-                     </p>
+               </li>
+               <li class="mega-menu-sub_item">
+                  <a href="#" class="mega-menu_link"><span>ABOUT</span>
+                     <span class="mega-menu_icons">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M8.99949 9.87855L12.7118 6.16626L13.7725 7.22692L8.99949 11.9999L4.22656 7.22692L5.28722 6.16626L8.99949 9.87855Z"
+                              fill="#1D1B14" />
+                        </svg>
+                     </span>
+                  </a>
+                  <div class="mega-menu-dropdown_wrap mega-menu-dropdown_inner">
+                     <div class="mega-menu-list-item mega-menu-categories-link">
+                        <ul>
+                           <li><a class="mega-menu-link" href="#">Shop All</a></li>
+                           <li><a class="mega-menu-link" href="#">New Arrivals</a></li>
+                           <li><a class="mega-menu-link" href="#">Best Sellers</a></li>
+                        </ul>
+                     </div>
                   </div>
+               </li>
+               <li class="mega-menu-sub_item">
+                  <a href="#" class="mega-menu_link"><span>BLOG</span></a>
+               </li>
+               <li class="mega-menu-sub_item">
+                  <a href="#" class="mega-menu_link"><span>CONTACT</span></a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <!-- start: Search Result -->
+   <div class="lay-search-default-main">
+      <div class="page-width">
+         <div class="search-default_main_wrapper">
+            <div class="search-default-top_form">
+               <div class="form-input">
+                  <input autocomplete="text" type="text" id="ContactForm-name" name="contact[Name]" value=""
+                     aria-required="true" placeholder="What are you drawn to?" required="">
+               </div>
+               <div class="search-icons">
+                  <span><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.1144 4.51881L4.5384 0.942807L5.4812 0L10.6667 5.18548L5.4812 10.3709L4.5384 9.42808L8.1144 5.85215H0V4.51881H8.1144Z"
+                           fill="#1D1B14" />
+                     </svg>
+                  </span>
                </div>
             </div>
-
-            <div class="feature-collection_thumb">
-               <div class="thumb-image active" data-image="0">
-                  <img src="assets/images/card/card-1.png" alt="Images">
-               </div>
-               <div class="thumb-image" data-image="1">
-                  <img src="assets/images/card/card-2.png" alt="Images">
-               </div>
-               <div class="thumb-image" data-image="2">
-                  <img src="assets/images/card/card-3.png" alt="Images">
-               </div>
-               <div class="thumb-image" data-image="3">
-                  <img src="assets/images/card/card-4.png" alt="Images">
+            <div class="search-tabs-result-main">
+               <div class="vertical-tab-wrapper">
+                  <div class="vertical-tab">
+                     <div class="each-tab active" data-target="#tabTitle1">
+                        <div class="title">New Arrivals</div>
+                     </div>
+                     <div class="each-tab" data-target="#tabTitle2">
+                        <div class="title">Best Sellers</div>
+                     </div>
+                     <div class="each-tab" data-target="#tabTitle3">
+                        <div class="title">Collections</div>
+                     </div>
+                     <div class="each-tab" data-target="#tabTitle4">
+                        <div class="title">Categories</div>
+                     </div>
+                  </div>
+                  <div class="search-item-main_wrap">
+                     <div id="tabTitle1" class="search-tabs-main_item active">
+                        <div class="search-tabs_box">
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-1.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-1.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-1.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-1.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="tabTitle2" class="search-tabs-main_item">
+                        <div class="search-tabs_box">
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-2.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-2.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-2.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-2.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="tabTitle3" class="search-tabs-main_item">
+                        <div class="search-tabs_box">
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-3.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-3.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-3.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-3.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="tabTitle4" class="search-tabs-main_item">
+                        <div class="search-tabs_box">
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-4.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-4.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-4.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                           <div class="search-tabs-item">
+                              <div class="search-thumb-images">
+                                 <img src="assets/images/project/project-4.png" alt="Images">
+                              </div>
+                              <div class="search-tabs-content">
+                                 <h3 class="tabs-title">Heliotropism</h3>
+                                 <p></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-   </section>
-   <!-- end: Start Section -->
-
+   </div>
+   <!-- end: Search Result -->
    <!-- JS here -->
    <script src="assets/js/main.js"></script>
 </body>
